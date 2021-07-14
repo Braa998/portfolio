@@ -1,0 +1,157 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --f-primary: 'Roboto', sans-serif;
+  --f-secondry: 'Montserrat', sans-serif;
+
+  --f-normal: 300;
+  --f-bold: 900;
+
+  --clr-light:#90E0EF;
+  --clr-dark: #0096C7;
+  --clr-word: #03045E;
+
+  --fs-h1: 3rem;
+  --fs-h2: 2.5rem;
+  --fs-h3: 1.5rem;
+  --fs-body: 1rem;
+}
+
+@media (min-width: 800px) {
+  :root{
+    --fs-h1: 4rem;
+    --fs-h2: 3.5rem;
+    --fs-h3: 2.5rem;
+    --fs-body: 2rem;
+  }
+}
+
+body{
+  background: var(--clr-light);
+  color: var(--clr-word);
+  margin:0;
+  font-family: var(--f-primary);
+  font-size: var(--fs-body);
+  line-height: 1.5;
+  padding: 1em;
+}
+
+section{
+  padding: 5em, 2em;
+}
+
+img{
+  position: relative;
+  display:inline-grid;
+  max-width: 100%;
+}
+
+strong{
+  font-weight: var(--f-bold);
+}
+h1,h2,h3{
+  line-height: 1;
+  margin: 0;
+}
+
+h1{
+  font-size: var(--fs-h1);
+}
+
+h2{
+  font-size: var(--fs-h2);
+}
+
+h3{
+  font-size: var(--fs-h3);
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.nav-link{
+  text-decoration: none;
+  color: inherit;
+  font-size: var(--fs-h3);
+  font-weight: var(--f-bold);
+}
+
+.nav-link:hover{
+  color: var(--clr-dark);
+}
+
+.section-intro-title{
+  font-weight: var(--f-secondry);
+  background: var(--clr-dark);
+
+
+}
+
+.section-intro-subtitle{
+  margin: 0;
+  font-weight: var(--f-h3);
+  padding-bottom: 1em;
+}
+.section-experience-title,.section-skills-title,.section-about-title{
+  background: var(--clr-dark);
+  font-family: var(--f-secondry);
+}
+.experience1{
+  float: top;
+  width: 100%;
+  border: 2px solid  var(--clr-dark);
+  padding: 5px;
+}
+
+.java-pic{
+  margin-left: 40%;
+  width: 300px;
+}
+.Python-pic{
+  margin-left: 35%;
+  width: 211px;
+}
+.Web-pic{
+  margin-left: 20%;
+  size: 50%;
+  width: 360px;
+}
+
+.teaching-pic{
+  margin-left: 40%;
+  size: 50%;
+  width: 360px;
+}
+
+.experience2,.experience3{
+  float: right;
+  width: 50%;
+  border: 2px solid  var(--clr-dark);
+  padding: 5px;
+  margin-bottom: 1em;
+}
+.experience4{
+  width: 100%;
+  border: 2px solid  var(--clr-dark);
+  padding: 5px;
+  margin-bottom: 1em;
+}
+
+.intro-img{
+  width: 20%;
+  position: absolute;
+  top: 450px;
+  left: 75%;
+
+}
+
+.about-img{
+  width: 20%;
+  position: relative;
+
+}
